@@ -19,7 +19,6 @@ const Navbar = () => {
   const accessToken = localStorage.getItem("accessToken");
   const { user } = useSelector(store => store.user);
   const api_url = import.meta.env.VITE_API_URL;
-  console.log(user);
 
   const logoutHandler = async () => {
     try {
